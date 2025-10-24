@@ -1,50 +1,33 @@
-# Welcome to your Expo app 👋
+## como correr el proyecto
+> en una terminal con nodejs: 22
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+para ejecutarlo en el navegador:
 
 ```bash
-npm run reset-project
+npm run web
+```
+> tambien puede escanear el qr desde su telefono movil descargar la app de expo y podra usar el app desde su movil
+
+si tiene windows y emulador de android
+```bash
+npm run android
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+si tiene mac y emulador 
+```bash
+expo run android
+```
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
+## librerias usadas
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+1. tanstack
+> se uso para hacer las consultas a la api esta libreria ayuda a manejar los errores, loading, mantiene cache de la informacion solicitada
 
-## Join the community
+2. redux toolkit
+> se uso para tener un estado global de las peliculas y de la pelicula selecionada para ver el detalle cuando se mueve a la pantalla de detalle se consulta el estado y luego se consulta mas detalles de la pelicula en la api con tanstack 
 
-Join our community of developers creating universal apps.
+3. se uso react native paper 
+> para algunos componentes como  los botones y el seach bar 
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4. se uso axios para hacer las peticiones a la api
